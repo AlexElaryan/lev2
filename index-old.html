@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/styles.css?v=17">
+</head>
+<body class="pp-viewing-first-screen">
+
+<div class="portait-warning">
+    סורי, האתר לא עובד ככה
+    <br>תסובב/י ת'טלפון חזרה 😉
+    <img src="./img/rotate-screen.png" alt="Rotate screen">
+</div>
+
+<!--HEADER-->
+<header>
+    <div class="container-big wrapper">
+        <a href="#first-screen" class="logo dark">
+            <svg width="89" height="52" viewBox="0 0 89 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M69.4444 3H81.4556L62.2889 21.5408L74.8111 38.2041M3 38.2589V3H13.2222V49H39.2889V40.5939H25.7444M39.5444 30.5052V3H49.2007V32.4021L53.7747 28.134L70.5461 49H84.5222" stroke="white" stroke-width="5.35602"/>
+                <linearGradient id="paint0_linear" x1="3" y1="3" x2="63.5462" y2="50.6147" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1333B3"/>
+                    <stop offset="1" stop-color="#3077F3"/>
+                </linearGradient>
+            </svg>
+        </a>
+
+        <button class="hamburger">
+            <span class="lines">
+                <span class="line top"></span>
+                <span class="line center"></span>
+                <span class="line bottom"></span>
+            </span>
+        </button>
+
+        <div class="mob-wrapper">
+            <div class="logo-wrapper">
+                <a href="#first-screen" class="logo dark">
+                    <svg width="89" height="52" viewBox="0 0 89 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M69.4444 3H81.4556L62.2889 21.5408L74.8111 38.2041M3 38.2589V3H13.2222V49H39.2889V40.5939H25.7444M39.5444 30.5052V3H49.2007V32.4021L53.7747 28.134L70.5461 49H84.5222" stroke="white" stroke-width="5.35602"/>
+                        <linearGradient id="paint0_linear" x1="3" y1="3" x2="63.5462" y2="50.6147" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1333B3"/>
+                            <stop offset="1" stop-color="#3077F3"/>
+                        </linearGradient>
+                    </svg>
+                </a>
+
+                <button class="close-btn hide-d">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5945 2.36359L7.95852 5.99992L11.5945 9.63608C12.1353 10.1771 12.1353 11.0535 11.5945 11.5946C11.3243 11.8648 10.97 12 10.6159 12C10.2612 12 9.90685 11.865 9.63683 11.5946L6.00007 7.95798L2.36359 11.5945C2.0934 11.8647 1.73908 12 1.38466 12C1.03034 12 0.676263 11.865 0.40583 11.5945C-0.135001 11.0537 -0.135001 10.1773 0.40583 9.63604L4.04169 5.99988L0.405624 2.36359C-0.135208 1.82276 -0.135208 0.946142 0.405624 0.405312C0.946352 -0.135104 1.82245 -0.135104 2.36339 0.405312L6.00004 4.04164L9.63641 0.405312C10.1775 -0.135104 11.0537 -0.135104 11.5943 0.405312C12.1353 0.946142 12.1353 1.82276 11.5945 2.36359Z" fill="#3A5EE5"/>
+                    </svg>
+                </button>
+
+            </div>
+
+            <ul class="nav">
+                <li><a href="#sixth-screen">רבדנ ואוב</a></li>
+                <li><a href="#fifth-screen">תידדה הרזע</a></li>
+                <li><a href="#fourth-screen">ישיא ןמוי</a></li>
+                <li><a href="#third-screen">םיסרוק</a></li>
+                <li><a href="#second-screen">הרטמה</a></li>
+                <li><a href="#first-screen">ריכהל םיענ</a></li>
+            </ul>
+
+            <!--SOC-SIDEBAR-->
+            <ul class="s-sidebar">
+                <li>
+                    <a href="https://www.instagram.com/levkazaryan.personal/" target="_blank">
+                        <span class="img-box">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.3125C0 1.93077 1.93077 0 4.3125 0H15.6875C18.0692 0 20 1.93077 20 4.3125V15.6875C20 18.0692 18.0692 20 15.6875 20H4.3125C1.93077 20 0 18.0692 0 15.6875V4.3125ZM14.2857 10C14.2857 12.3669 12.3669 14.2857 10 14.2857C7.63307 14.2857 5.71429 12.3669 5.71429 10C5.71429 7.63307 7.63307 5.71429 10 5.71429C12.3669 5.71429 14.2857 7.63307 14.2857 10ZM15.7143 5.71429C16.5033 5.71429 17.1429 5.07469 17.1429 4.28571C17.1429 3.49674 16.5033 2.85714 15.7143 2.85714C14.9253 2.85714 14.2857 3.49674 14.2857 4.28571C14.2857 5.07469 14.9253 5.71429 15.7143 5.71429Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/levkazaryan.personal" target="_blank">
+                        <span class="img-box">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.8516 12.9375L17.4906 8.77523H13.4965V6.07417C13.4965 4.93567 14.0542 3.8252 15.8432 3.8252H17.6588V0.281764C17.6588 0.281764 16.0114 0.000732422 14.4359 0.000732422C11.1469 0.000732422 8.9971 1.99454 8.9971 5.60339V8.77595H5.34082V12.9382H8.9971V23.0007H13.4965V12.9382L16.8516 12.9375Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/972535319943?text=%D7%94%D7%99%D7%99%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8" target="_blank">
+                        <span class="img-box">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C4.50745 0 0 4.50745 0 10C0 11.8127 0.488739 13.5774 1.41556 15.1213L0 20L4.87869 18.5844C6.42258 19.5113 8.18726 20 10 20C15.4926 20 20 15.4926 20 10C20 4.50745 15.4926 0 10 0ZM16.2521 14.2253L15.7869 14.6906C15.1286 15.3488 13.6148 15.2966 12.6421 15.1088C9.40765 14.4841 5.63675 10.829 4.90952 7.66373C4.54941 6.09573 4.74823 4.73251 5.26825 4.21234L5.73349 3.7471C5.9903 3.49045 6.40747 3.49075 6.66397 3.7471L8.52524 5.60852C8.64944 5.73273 8.7175 5.89737 8.7175 6.07361C8.7175 6.24985 8.64944 6.41464 8.52524 6.53839L8.06015 7.00409C7.54745 7.51801 7.54745 8.35281 8.06015 8.86551L11.1337 11.8987C11.6479 12.4129 12.4802 12.4135 12.9951 11.8987L13.4604 11.4336C13.7006 11.192 14.1492 11.1913 14.3913 11.4336L16.2521 13.2944C16.5048 13.546 16.5144 13.9629 16.2521 14.2253Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@levkazaryan" target="_blank">
+                        <span class="img-box">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5769 5.76758C20.2643 5.76758 19.0532 5.33273 18.0807 4.59916C16.9653 3.75822 16.1638 2.52467 15.8808 1.10289C15.8108 0.751601 15.773 0.389082 15.7694 0.0175781H12.0198V10.2634L12.0153 15.8754C12.0153 17.3758 11.0383 18.648 9.68386 19.0954C9.2908 19.2253 8.86629 19.2868 8.42425 19.2626C7.86004 19.2316 7.3313 19.0613 6.87175 18.7864C5.8938 18.2015 5.23076 17.1404 5.21279 15.9267C5.18449 14.0296 6.71812 12.4829 8.61382 12.4829C8.98802 12.4829 9.3474 12.544 9.68386 12.655V9.85457V8.84787C9.32898 8.79531 8.96781 8.76791 8.60259 8.76791C6.52765 8.76791 4.58703 9.63041 3.19984 11.1843C2.15136 12.3585 1.52246 13.8567 1.42543 15.4276C1.2983 17.4913 2.05343 19.453 3.51789 20.9004C3.73306 21.1129 3.95902 21.3101 4.19531 21.492C5.45087 22.4583 6.98586 22.9821 8.60259 22.9821C8.96781 22.9821 9.32898 22.9551 9.68386 22.9026C11.1941 22.6789 12.5876 21.9875 13.6873 20.9004C15.0386 19.5649 15.7852 17.7918 15.7932 15.9046L15.7739 7.52402C16.4186 8.02131 17.1234 8.43279 17.8799 8.75219C19.0564 9.24857 20.3038 9.50014 21.5877 9.49969V6.77697V5.76668C21.5886 5.76758 21.5778 5.76758 21.5769 5.76758Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <img class="lk-img hide-d" src="./img/logo.svg" alt="">
+        </div>
+    </div>
+</header>
+
+<!--SIDEBAR-->
+<div class="sidebar">
+    <ul class="links-nav" id="nav-menu">
+        <li data-menuanchor="first-screen" class="active"><a class="link" href="#first-screen"><span>01</span></a></li>
+        <li data-menuanchor="second-screen" ><a class="link" href="#second-screen"><span>02</span></a></li>
+        <li data-menuanchor="third-screen" ><a class="link" href="#third-screen"><span>03</span></a></li>
+        <li data-menuanchor="fourth-screen" ><a class="link" href="#fourth-screen"><span>04</span><span class="sub-page"></span></a></li>
+        <li data-menuanchor="fifth-screen" ><a class="link" href="#fifth-screen"><span>05</span></a></li>
+        <li data-menuanchor="sixth-screen" ><a class="link" href="#sixth-screen"><span>06</span></a></li>
+    </ul>
+    <div class="total-slides">06</div>
+
+    <button class="next-slide">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.9999 0C9.17543 0 4.43701 4.81289 4.43701 10.7285V19.2718C4.43701 25.1874 9.17543 30 14.9999 30C20.8241 30 25.5629 25.202 25.5629 19.3046V10.7285C25.5629 4.81289 20.8241 0 14.9999 0ZM23.5761 19.3046C23.5761 24.1066 19.729 28.0133 14.9999 28.0133C10.2711 28.0133 6.42381 24.0918 6.42381 19.2715V10.7285C6.42381 5.90824 10.2711 1.98674 14.9999 1.98674C19.7291 1.98674 23.5761 5.90824 23.5761 10.7285V19.3046Z" fill="#3A5EE5"/>
+            <path d="M14.9997 8.21191C14.4511 8.21191 14.0063 8.65664 14.0063 9.20531V12.6821C14.0063 13.2308 14.4511 13.6755 14.9997 13.6755C15.5484 13.6755 15.9931 13.2308 15.9931 12.6821V9.20531C15.9931 8.65664 15.5484 8.21191 14.9997 8.21191Z" fill="#3A5EE5"/>
+        </svg>
+
+        <svg class="mob" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+                <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#3A5EE5"/>
+            </g>
+            <svg width="11" height="7" viewBox="0 0 11 7" x="15" y="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.00409 6.00409C4.87249 6.00485 4.74202 5.97963 4.62019 5.92986C4.49835 5.8801 4.38753 5.80677 4.29409 5.71409L0.294092 1.71409C0.200853 1.62085 0.126893 1.51016 0.0764322 1.38834C0.0259719 1.26652 1.96485e-09 1.13595 0 1.00409C-1.96485e-09 0.872232 0.0259719 0.741664 0.0764322 0.619842C0.126893 0.49802 0.200853 0.38733 0.294092 0.294091C0.38733 0.200853 0.498021 0.126892 0.619843 0.0764313C0.741665 0.0259709 0.872233 -1.96485e-09 1.00409 0C1.13595 1.96486e-09 1.26652 0.0259709 1.38834 0.0764313C1.51016 0.126892 1.62085 0.200853 1.71409 0.294091L5.00409 3.60409L8.30409 0.424091C8.39608 0.321802 8.50819 0.239593 8.6334 0.182607C8.75862 0.125621 8.89424 0.0950833 9.03179 0.0929041C9.16935 0.0907248 9.30587 0.11695 9.43283 0.169941C9.55978 0.222932 9.67444 0.301549 9.76962 0.400873C9.86481 0.500198 9.93848 0.618093 9.98602 0.747188C10.0336 0.876282 10.054 1.0138 10.0459 1.15113C10.0379 1.28847 10.0016 1.42267 9.93936 1.54535C9.8771 1.66802 9.7902 1.77653 9.68409 1.86409L5.68409 5.72409C5.50122 5.90041 5.25809 6.00052 5.00409 6.00409Z" fill="#3A5EE5"/>
+            </svg>
+            <defs>
+                <filter id="filter0_d" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                    <feOffset dx="-5"/>
+                    <feGaussianBlur stdDeviation="12.5"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.227451 0 0 0 0 0.368627 0 0 0 0 0.898039 0 0 0 0.05 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+            </defs>
+        </svg>
+
+
+    </button>
+</div>
+
+<div id="pagepiling">
+    <!--SOC-SIDEBAR-->
+    <ul class="s-sidebar">
+        <li><a href="https://www.instagram.com/levkazaryan.personal/" target="_blank">
+            <span class="img-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.3125C0 1.93077 1.93077 0 4.3125 0H15.6875C18.0692 0 20 1.93077 20 4.3125V15.6875C20 18.0692 18.0692 20 15.6875 20H4.3125C1.93077 20 0 18.0692 0 15.6875V4.3125ZM14.2857 10C14.2857 12.3669 12.3669 14.2857 10 14.2857C7.63307 14.2857 5.71429 12.3669 5.71429 10C5.71429 7.63307 7.63307 5.71429 10 5.71429C12.3669 5.71429 14.2857 7.63307 14.2857 10ZM15.7143 5.71429C16.5033 5.71429 17.1429 5.07469 17.1429 4.28571C17.1429 3.49674 16.5033 2.85714 15.7143 2.85714C14.9253 2.85714 14.2857 3.49674 14.2857 4.28571C14.2857 5.07469 14.9253 5.71429 15.7143 5.71429Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+        </a></li>
+
+        <li><a href="https://www.facebook.com/levkazaryan.personal" target="_blank">
+            <span class="img-box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8516 12.9375L17.4906 8.77523H13.4965V6.07417C13.4965 4.93567 14.0542 3.8252 15.8432 3.8252H17.6588V0.281764C17.6588 0.281764 16.0114 0.000732422 14.4359 0.000732422C11.1469 0.000732422 8.9971 1.99454 8.9971 5.60339V8.77595H5.34082V12.9382H8.9971V23.0007H13.4965V12.9382L16.8516 12.9375Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+        </a></li>
+
+        <li><a href="https://wa.me/972535319943?text=%D7%94%D7%99%D7%99%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8" target="_blank">
+        <span class="img-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0C4.50745 0 0 4.50745 0 10C0 11.8127 0.488739 13.5774 1.41556 15.1213L0 20L4.87869 18.5844C6.42258 19.5113 8.18726 20 10 20C15.4926 20 20 15.4926 20 10C20 4.50745 15.4926 0 10 0ZM16.2521 14.2253L15.7869 14.6906C15.1286 15.3488 13.6148 15.2966 12.6421 15.1088C9.40765 14.4841 5.63675 10.829 4.90952 7.66373C4.54941 6.09573 4.74823 4.73251 5.26825 4.21234L5.73349 3.7471C5.9903 3.49045 6.40747 3.49075 6.66397 3.7471L8.52524 5.60852C8.64944 5.73273 8.7175 5.89737 8.7175 6.07361C8.7175 6.24985 8.64944 6.41464 8.52524 6.53839L8.06015 7.00409C7.54745 7.51801 7.54745 8.35281 8.06015 8.86551L11.1337 11.8987C11.6479 12.4129 12.4802 12.4135 12.9951 11.8987L13.4604 11.4336C13.7006 11.192 14.1492 11.1913 14.3913 11.4336L16.2521 13.2944C16.5048 13.546 16.5144 13.9629 16.2521 14.2253Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+        </a></li>
+
+        <li><a href="https://www.tiktok.com/@levkazaryan" target="_blank">
+            <span class="img-box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5769 5.76758C20.2643 5.76758 19.0532 5.33273 18.0807 4.59916C16.9653 3.75822 16.1638 2.52467 15.8808 1.10289C15.8108 0.751601 15.773 0.389082 15.7694 0.0175781H12.0198V10.2634L12.0153 15.8754C12.0153 17.3758 11.0383 18.648 9.68386 19.0954C9.2908 19.2253 8.86629 19.2868 8.42425 19.2626C7.86004 19.2316 7.3313 19.0613 6.87175 18.7864C5.8938 18.2015 5.23076 17.1404 5.21279 15.9267C5.18449 14.0296 6.71812 12.4829 8.61382 12.4829C8.98802 12.4829 9.3474 12.544 9.68386 12.655V9.85457V8.84787C9.32898 8.79531 8.96781 8.76791 8.60259 8.76791C6.52765 8.76791 4.58703 9.63041 3.19984 11.1843C2.15136 12.3585 1.52246 13.8567 1.42543 15.4276C1.2983 17.4913 2.05343 19.453 3.51789 20.9004C3.73306 21.1129 3.95902 21.3101 4.19531 21.492C5.45087 22.4583 6.98586 22.9821 8.60259 22.9821C8.96781 22.9821 9.32898 22.9551 9.68386 22.9026C11.1941 22.6789 12.5876 21.9875 13.6873 20.9004C15.0386 19.5649 15.7852 17.7918 15.7932 15.9046L15.7739 7.52402C16.4186 8.02131 17.1234 8.43279 17.8799 8.75219C19.0564 9.24857 20.3038 9.50014 21.5877 9.49969V6.77697V5.76668C21.5886 5.76758 21.5778 5.76758 21.5769 5.76758Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+        </a></li>
+    </ul>
+
+    <!--SCREEN-BLOCK-1-->
+    <div id="first-screen" class="screen-block section first">
+        <div class="container-big wrapper">
+            <div class="info-box">
+                <h1>ריכהל םיענ ,ייה</h1>
+                <span class="quote-box">
+                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.075 22.8511C8.669 22.8511 9.579 22.8101 10.804 22.7321V18.1631C7.082 18.1631 5.226 16.4411 5.226 12.9991L5.286 10.9221H9.142V0.0020752H0V11.8111C0.001 19.1721 2.693 22.8511 8.075 22.8511ZM23.517 18.1621V22.7311C22.452 22.8091 21.7 22.8501 21.263 22.8501C15.882 22.8501 13.192 19.1701 13.192 11.8091V7.43866e-05H22.333V10.9201H18.476L18.417 12.9971C18.412 16.2421 20.115 17.9631 23.517 18.1621Z" fill="#3A5EE5"/>
+                </svg>
+                <span class="text">
+                    םוחת לכב חילצהל לוכי דחא לכש ןימאמ ינא<br>
+                     ליבשב ךירצש המ לכ ,ורחבי איה וא אוהש<br>
+.דימתהלו לועפל ,ןימאהל ,תוצרל הז ,הז
+                </span>
+                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.075 22.8511C8.669 22.8511 9.579 22.8101 10.804 22.7321V18.1631C7.082 18.1631 5.226 16.4411 5.226 12.9991L5.286 10.9221H9.142V0.0020752H0V11.8111C0.001 19.1721 2.693 22.8511 8.075 22.8511ZM23.517 18.1621V22.7311C22.452 22.8091 21.7 22.8501 21.263 22.8501C15.882 22.8501 13.192 19.1701 13.192 11.8091V7.43866e-05H22.333V10.9201H18.476L18.417 12.9971C18.412 16.2421 20.115 17.9631 23.517 18.1621Z" fill="#3A5EE5"/>
+                </svg>
+            </span>
+
+                <span class="sub-text">ןאירזק בל</span>
+
+                <button class="blue-btn video-btn big img">
+                    ןוטרסב ופצ
+                    <span class="img-box">
+                    <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.25833 6.9641C8.25833 5.4245 9.925 4.46225 11.2583 5.23205L24.7583 13.0263C26.0917 13.7961 26.0917 15.7206 24.7583 16.4904L11.2583 24.2846C9.925 25.0544 8.25833 24.0922 8.25833 22.5526L8.25833 6.9641Z" fill="#3A5EE5"/>
+                    </svg>
+                </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--SCREEN-BLOCK-2-->
+    <div id="second-screen" class="screen-block section top second">
+        <div class="container">
+            <h2>ילש הלודגה הרטמה</h2>
+
+            <div class="content-wrapper">
+                <div class="s-col">
+                <span class="text">
+                    "זאת המטרה, לעזור לכמה שיותר אנשים להצליח, לעזור לכמה שיותר אנשים להיות גירסה יותר טובה של עצמם, לעזור לכמה שיותר אנשים לחיות חיים מאושרים יותר".
+                </span>
+                </div>
+
+                <div class="l-col">
+                    <div class="video-box">
+                        <img src="./img/video-bg.jpg" alt="">
+                        <button class="play-btn">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.25833 6.9641C8.25833 5.4245 9.925 4.46225 11.2583 5.23205L24.7583 13.0263C26.0917 13.7961 26.0917 15.7206 24.7583 16.4904L11.2583 24.2846C9.925 25.0544 8.25833 24.0922 8.25833 22.5526L8.25833 6.9641Z" fill="#3A5EE5"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SCREEN-BLOCK-3-->
+    <div id="third-screen" class="screen-block section top third" dir="rtl">
+        <div class="container">
+            <h2>םיסרוק</h2>
+
+            <div class="slider-wrapper slider-wrapper-3">
+                <div class="slider-inner-wrapper">
+                    <div class="slider slider-3">
+                        <!--SLIDE-->
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="img-box">
+                                    <img src="./img/slider-img-1.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <span class="title">סרוקה תרתוכ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="img-box">
+                                    <img src="./img/slider-img-2.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <span class="title">סרוקה תרתוכ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="img-box">
+                                    <img src="./img/slider-img-3.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <span class="title">סרוקה תרתוכ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="img-box">
+                                    <img src="./img/slider-img-1.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <span class="title">סרוקה תרתוכ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="img-box">
+                                    <img src="./img/slider-img-2.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <span class="title">סרוקה תרתוכ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div class="slide">
+                            <div class="wrapper">
+                                <div class="img-box">
+                                    <img src="./img/slider-img-3.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <span class="title">סרוקה תרתוכ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-number"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SCREEN-BLOCK-4-->
+    <div id="fourth-screen" class="screen-block section top fourth" dir="rtl">
+        <div class="container">
+            <h2>ישיא ןמוי</h2>
+
+            <div class="slider-wrapper slider-wrapper-4">
+                <div class="slider-inner-wrapper">
+                    <div class="slider slider-4 audio-slider">
+                        <!--SLIDE-->
+                        <div data-slide="1" class="slide">
+                            <div class="img-box">
+                                <button class="audio-img" type="button" data-sound="./sounds/sound1.mp3"></button>
+                                <img src="./img/slider-1.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <span class="title">סרוקה תרתוכ</span>
+                                <span class="text">
+                            לש ירקיעה ןכותה לש רצק רואית<br>
+                            םייתש וא תחא הרושב הז קרפ
+                        </span>
+                            </div>
+                            <a href="#" class="blue-btn">דוע אורקל</a>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div data-slide="2" class="slide">
+                            <div class="img-box">
+                                <button class="audio-img" type="button" data-sound="./sounds/sound1.mp3"></button>
+                                <img src="./img/slider-2.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <span class="title">קרפ תרתוכ</span>
+                                <span class="text">
+                            לש ירקיעה ןכותה לש רצק רואית<br>
+                            םייתש וא תחא הרושב הז קרפ
+                        </span>
+                            </div>
+                            <a href="#" class="blue-btn">דוע אורקל</a>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div data-slide="3" class="slide">
+                            <div class="img-box">
+                                <button class="audio-img" type="button" data-sound="./sounds/sound1.mp3"></button>
+                                <img src="./img/slider-3.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <span class="title">קרפ תרתוכ</span>
+                                <span class="text">
+                            לש ירקיעה ןכותה לש רצק רואית<br>
+                            םייתש וא תחא הרושב הז קרפ
+                        </span>
+                            </div>
+                            <a href="#" class="blue-btn">דוע אורקל</a>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div data-slide="4" class="slide">
+                            <div class="img-box">
+                                <button class="audio-img" type="button" data-sound="./sounds/sound1.mp3"></button>
+                                <img src="./img/slider-1.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <span class="title">סרוקה תרתוכ</span>
+                                <span class="text">
+                            לש ירקיעה ןכותה לש רצק רואית<br>
+                            םייתש וא תחא הרושב הז קרפ
+                        </span>
+                            </div>
+                            <a href="#" class="blue-btn">דוע אורקל</a>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div data-slide="5" class="slide">
+                            <div class="img-box">
+                                <button class="audio-img" type="button" data-sound="./sounds/sound1.mp3"></button>
+                                <img src="./img/slider-2.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <span class="title">קרפ תרתוכ</span>
+                                <span class="text">
+                            לש ירקיעה ןכותה לש רצק רואית<br>
+                            םייתש וא תחא הרושב הז קרפ
+                        </span>
+                            </div>
+                            <a href="#" class="blue-btn">דוע אורקל</a>
+                        </div>
+
+                        <!--SLIDE-->
+                        <div data-slide="6" class="slide">
+                            <div class="img-box">
+                                <button class="audio-img" type="button" data-sound="./sounds/sound1.mp3"></button>
+                                <img src="./img/slider-3.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <span class="title">קרפ תרתוכ</span>
+                                <span class="text">
+                            לש ירקיעה ןכותה לש רצק רואית<br>
+                            םייתש וא תחא הרושב הז קרפ
+                        </span>
+                            </div>
+                            <a href="#" class="blue-btn">דוע אורקל</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-number"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SCREEN-BLOCK-5-->
+    <div id="fifth-screen" class="screen-block section top fifth">
+        <div class="container">
+            <h2>תידדה הרזע</h2>
+
+            <div class="content-wrapper">
+                <div class="s-col">
+                <span class="text">
+                    "המטרה העליונה שלנו בחיים האלו היא להיות חלק ממשהו גדול עם מטרה מכובדת שישאר לעזור לאנשים גם כשאנחנו לא נהיה פה"
+                </span>
+                </div>
+
+                <div class="l-col">
+                    <div class="video-box">
+                        <img src="./img/video-bg.jpg" alt="">
+                        <button class="play-btn">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.25833 6.9641C8.25833 5.4245 9.925 4.46225 11.2583 5.23205L24.7583 13.0263C26.0917 13.7961 26.0917 15.7206 24.7583 16.4904L11.2583 24.2846C9.925 25.0544 8.25833 24.0922 8.25833 22.5526L8.25833 6.9641Z" fill="#3A5EE5"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SCREEN-BLOCK-6-->
+    <div id="sixth-screen" class="screen-block section top sixth">
+        <div class="container">
+            <h2>רבדנ ואוב</h2>
+
+            <div class="content-wrapper">
+                <span class="sub-title">:החונ ךרד לכב רשק יתיא ורצ</span>
+
+                <ul class="s-list">
+                    <li><a href="https://www.instagram.com/levkazaryan.personal/" target="_blank" class="blue-btn big img">
+                        Instagram
+                        <span class="img-box">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.3125C0 1.93077 1.93077 0 4.3125 0H15.6875C18.0692 0 20 1.93077 20 4.3125V15.6875C20 18.0692 18.0692 20 15.6875 20H4.3125C1.93077 20 0 18.0692 0 15.6875V4.3125ZM14.2857 10C14.2857 12.3669 12.3669 14.2857 10 14.2857C7.63307 14.2857 5.71429 12.3669 5.71429 10C5.71429 7.63307 7.63307 5.71429 10 5.71429C12.3669 5.71429 14.2857 7.63307 14.2857 10ZM15.7143 5.71429C16.5033 5.71429 17.1429 5.07469 17.1429 4.28571C17.1429 3.49674 16.5033 2.85714 15.7143 2.85714C14.9253 2.85714 14.2857 3.49674 14.2857 4.28571C14.2857 5.07469 14.9253 5.71429 15.7143 5.71429Z" fill="#3a5ee5"/>
+                        </svg>
+                    </span>
+                    </a></li>
+
+                    <li><a href="https://www.facebook.com/levkazaryan.personal" target="_blank" class="blue-btn big img">
+                        Facebook
+                        <span class="img-box">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.8516 12.9375L17.4906 8.77523H13.4965V6.07417C13.4965 4.93567 14.0542 3.8252 15.8432 3.8252H17.6588V0.281764C17.6588 0.281764 16.0114 0.000732422 14.4359 0.000732422C11.1469 0.000732422 8.9971 1.99454 8.9971 5.60339V8.77595H5.34082V12.9382H8.9971V23.0007H13.4965V12.9382L16.8516 12.9375Z" fill="#3a5ee5"/>
+                        </svg>
+                    </span>
+                    </a></li>
+
+                    <li><a href="https://wa.me/972535319943?text=%D7%94%D7%99%D7%99%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8" target="_blank" class="blue-btn big img">
+                        WhatsApp
+                        <span class="img-box">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 0C4.50745 0 0 4.50745 0 10C0 11.8127 0.488739 13.5774 1.41556 15.1213L0 20L4.87869 18.5844C6.42258 19.5113 8.18726 20 10 20C15.4926 20 20 15.4926 20 10C20 4.50745 15.4926 0 10 0ZM16.2521 14.2253L15.7869 14.6906C15.1286 15.3488 13.6148 15.2966 12.6421 15.1088C9.40765 14.4841 5.63675 10.829 4.90952 7.66373C4.54941 6.09573 4.74823 4.73251 5.26825 4.21234L5.73349 3.7471C5.9903 3.49045 6.40747 3.49075 6.66397 3.7471L8.52524 5.60852C8.64944 5.73273 8.7175 5.89737 8.7175 6.07361C8.7175 6.24985 8.64944 6.41464 8.52524 6.53839L8.06015 7.00409C7.54745 7.51801 7.54745 8.35281 8.06015 8.86551L11.1337 11.8987C11.6479 12.4129 12.4802 12.4135 12.9951 11.8987L13.4604 11.4336C13.7006 11.192 14.1492 11.1913 14.3913 11.4336L16.2521 13.2944C16.5048 13.546 16.5144 13.9629 16.2521 14.2253Z" fill="#3a5ee5"/>
+                        </svg>
+                    </span>
+                    </a></li>
+
+                    <li><a href="https://www.tiktok.com/@levkazaryan" target="_blank" class="blue-btn big img">
+                        TikTok
+                        <span class="img-box">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5769 5.76758C20.2643 5.76758 19.0532 5.33273 18.0807 4.59916C16.9653 3.75822 16.1638 2.52467 15.8808 1.10289C15.8108 0.751601 15.773 0.389082 15.7694 0.0175781H12.0198V10.2634L12.0153 15.8754C12.0153 17.3758 11.0383 18.648 9.68386 19.0954C9.2908 19.2253 8.86629 19.2868 8.42425 19.2626C7.86004 19.2316 7.3313 19.0613 6.87175 18.7864C5.8938 18.2015 5.23076 17.1404 5.21279 15.9267C5.18449 14.0296 6.71812 12.4829 8.61382 12.4829C8.98802 12.4829 9.3474 12.544 9.68386 12.655V9.85457V8.84787C9.32898 8.79531 8.96781 8.76791 8.60259 8.76791C6.52765 8.76791 4.58703 9.63041 3.19984 11.1843C2.15136 12.3585 1.52246 13.8567 1.42543 15.4276C1.2983 17.4913 2.05343 19.453 3.51789 20.9004C3.73306 21.1129 3.95902 21.3101 4.19531 21.492C5.45087 22.4583 6.98586 22.9821 8.60259 22.9821C8.96781 22.9821 9.32898 22.9551 9.68386 22.9026C11.1941 22.6789 12.5876 21.9875 13.6873 20.9004C15.0386 19.5649 15.7852 17.7918 15.7932 15.9046L15.7739 7.52402C16.4186 8.02131 17.1234 8.43279 17.8799 8.75219C19.0564 9.24857 20.3038 9.50014 21.5877 9.49969V6.77697V5.76668C21.5886 5.76758 21.5778 5.76758 21.5769 5.76758Z" fill="#3a5ee5"/>
+                        </svg>
+                    </span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--SCREEN-BLOCK-4-2-->
+<div class="screen-block top fourth card" id="fourth-card">
+    <div class="container wrapper">
+        <h2>קרפ תרתוכ</h2>
+
+        <div class="slide slide-1">
+            <div class="content-wrapper">
+                <div class="s-col">
+                    <div class="audio-box">
+                        <div class="img-box">
+                            <img src="./img/slider-1.jpg" alt="">
+                        </div>
+
+                        <div class="audio-row">
+                            <audio src="./sounds/sound1.mp3" preload="auto"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-col">
+                <span class="text">
+                    ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                                        ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="content-wrapper">
+                <div class="s-col">
+                    <div class="audio-box">
+                        <div class="img-box">
+                            <img src="./img/slider-1.jpg" alt="">
+                        </div>
+
+                        <div class="audio-row">
+                            <audio src="./sounds/sound1.mp3" preload="auto"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-col">
+                <span class="text">
+                    ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                                        ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="content-wrapper">
+                <div class="s-col">
+                    <div class="audio-box">
+                        <div class="img-box">
+                            <img src="./img/slider-1.jpg" alt="">
+                        </div>
+
+                        <div class="audio-row">
+                            <audio src="./sounds/sound1.mp3" preload="auto"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-col">
+                <span class="text">
+                    ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                                        ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-4">
+            <div class="content-wrapper">
+                <div class="s-col">
+                    <div class="audio-box">
+                        <div class="img-box">
+                            <img src="./img/slider-1.jpg" alt="">
+                        </div>
+
+                        <div class="audio-row">
+                            <audio src="./sounds/sound1.mp3" preload="auto"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-col">
+                <span class="text">
+                    ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                                        ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-5">
+            <div class="content-wrapper">
+                <div class="s-col">
+                    <div class="audio-box">
+                        <div class="img-box">
+                            <img src="./img/slider-1.jpg" alt="">
+                        </div>
+
+                        <div class="audio-row">
+                            <audio src="./sounds/sound1.mp3" preload="auto"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-col">
+                <span class="text">
+                    ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                                        ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-6">
+            <div class="content-wrapper">
+                <div class="s-col">
+                    <div class="audio-box">
+                        <div class="img-box">
+                            <img src="./img/slider-1.jpg" alt="">
+                        </div>
+
+                        <div class="audio-row">
+                            <audio src="./sounds/sound1.mp3" preload="auto"></audio>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-col">
+                <span class="text">
+                    ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                                        ךומנ ןוכיסו הכומנ העקשה םע  תונמדזה םישנאל ןתונ יתשר קוויש
+                    קוויש .ילכלכ שפוחל תאצל  וליפאו תיביספ הסנכה םמצעל רצייל
+                    הדובעה םוקמב אלו םמצעב קרו ךא םייולת תויהל תורשפא םישנאל
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button class="back-btn">
+                <svg width="21" height="10" viewBox="0 0 21 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.54038 5.45962C0.286539 5.20578 0.286539 4.79422 0.54038 4.54038L4.67695 0.403806C4.9308 0.149965 5.34235 0.149965 5.59619 0.403806C5.85003 0.657647 5.85003 1.0692 5.59619 1.32304L1.91924 5L5.59619 8.67696C5.85003 8.9308 5.85003 9.34235 5.59619 9.59619C5.34235 9.85003 4.9308 9.85003 4.67695 9.59619L0.54038 5.45962ZM21 5.65H1V4.35H21V5.65Z" fill="#3A5EE5"/>
+                </svg>
+                <span class="text">רוזח</span>
+            </button>
+            <button class="blue-btn">ךשמה</button>
+        </div>
+    </div>
+</div>
+
+<div class="video-modal">
+    <div class="video-wrapper">
+        <button class="close-btn" type="button">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="white"/>
+                <path d="M25.5945 16.3636L21.9585 19.9999L25.5945 23.6361C26.1353 24.1771 26.1353 25.0535 25.5945 25.5946C25.3243 25.8648 24.97 26 24.6159 26C24.2612 26 23.9068 25.865 23.6368 25.5946L20.0001 21.958L16.3636 25.5945C16.0934 25.8647 15.7391 26 15.3847 26C15.0303 26 14.6763 25.865 14.4058 25.5945C13.865 25.0537 13.865 24.1773 14.4058 23.636L18.0417 19.9999L14.4056 16.3636C13.8648 15.8228 13.8648 14.9461 14.4056 14.4053C14.9464 13.8649 15.8225 13.8649 16.3634 14.4053L20 18.0416L23.6364 14.4053C24.1775 13.8649 25.0537 13.8649 25.5943 14.4053C26.1353 14.9461 26.1353 15.8228 25.5945 16.3636Z" fill="#3A5EE5"/>
+            </svg>
+        </button>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gdJjc6l6iII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.pagepiling.min.js"></script>
+<script src="./js/slick.1.8.1.js"></script>
+<script src="./js/audio.min.js"></script>
+<script src="./js/main.js?v=13"></script>
+</body>
+</html>

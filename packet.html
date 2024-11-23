@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="iw">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/favicon.svg">
+    <title>שיטת ארבעת הצבעים</title>
+
+    <style>
+        body {
+            opacity: 0;
+            transition: .3s ease-in-out;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.pagepiling.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/styles.css?v=18">
+</head>
+<body class="landing-page packet">
+
+<div class="bg-wrapper">
+    <!--HEADER-->
+    <header>
+        <div class="container wrapper">
+            <a href="./index.html" class="logo dark">
+                <svg width="89" height="52" viewBox="0 0 89 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M69.4444 3H81.4556L62.2889 21.5408L74.8111 38.2041M3 38.2589V3H13.2222V49H39.2889V40.5939H25.7444M39.5444 30.5052V3H49.2007V32.4021L53.7747 28.134L70.5461 49H84.5222" stroke="white" stroke-width="5.35602"/>
+                    <linearGradient id="paint0_linear" x1="3" y1="3" x2="63.5462" y2="50.6147" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#1333B3"/>
+                        <stop offset="1" stop-color="#3077F3"/>
+                    </linearGradient>
+                </svg>
+            </a>
+
+            <button type="button" class="hamburger">
+            <span class="lines">
+                <span class="line top"></span>
+                <span class="line center"></span>
+                <span class="line bottom"></span>
+            </span>
+            </button>
+
+            <div class="mob-wrapper">
+                <div class="logo-wrapper">
+                    <a href="#about" class="logo dark">
+                        <svg width="89" height="52" viewBox="0 0 89 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M69.4444 3H81.4556L62.2889 21.5408L74.8111 38.2041M3 38.2589V3H13.2222V49H39.2889V40.5939H25.7444M39.5444 30.5052V3H49.2007V32.4021L53.7747 28.134L70.5461 49H84.5222" stroke="white" stroke-width="5.35602"/>
+                            <linearGradient id="paint0_linear" x1="3" y1="3" x2="63.5462" y2="50.6147" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1333B3"/>
+                                <stop offset="1" stop-color="#3077F3"/>
+                            </linearGradient>
+                        </svg>
+                    </a>
+
+                    <button class="close-btn hide-d">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5945 2.36359L7.95852 5.99992L11.5945 9.63608C12.1353 10.1771 12.1353 11.0535 11.5945 11.5946C11.3243 11.8648 10.97 12 10.6159 12C10.2612 12 9.90685 11.865 9.63683 11.5946L6.00007 7.95798L2.36359 11.5945C2.0934 11.8647 1.73908 12 1.38466 12C1.03034 12 0.676263 11.865 0.40583 11.5945C-0.135001 11.0537 -0.135001 10.1773 0.40583 9.63604L4.04169 5.99988L0.405624 2.36359C-0.135208 1.82276 -0.135208 0.946142 0.405624 0.405312C0.946352 -0.135104 1.82245 -0.135104 2.36339 0.405312L6.00004 4.04164L9.63641 0.405312C10.1775 -0.135104 11.0537 -0.135104 11.5943 0.405312C12.1353 0.946142 12.1353 1.82276 11.5945 2.36359Z" fill="#3A5EE5"/>
+                        </svg>
+                    </button>
+
+                </div>
+
+                <ul class="nav">
+                    <li><a href="./index.html#contact">בואו נדבר</a></li>
+                    <li><a href="./index.html#landing">שיטת ארבעת הצבעים</a></li>
+                    <li><a href="./index.html#test">מבחן אישיות</a></li>
+                    <li><a href="./index.html#reviews">מה אומרים עלי</a></li>
+                    <!--                <li><a href="#fifth-screen">תידדה הרזע</a></li>-->
+                    <!--                <li><a href="#fourth-screen">ישיא ןמוי</a></li>-->
+                    <!--                <li><a href="#third-screen">םיסרוק</a></li>-->
+                    <!--                <li><a class="btn-link" target="_blank" href="https://headstart.co.il/project/60611">הספר</a></li>-->
+                    <li><a href="./index.html#purpose">המטרה</a></li>
+                    <li><a href="./book.html">מה הספר כולל</a></li>
+                    <li><a href="./index.html#about">נעים להכיר</a></li>
+                </ul>
+
+                <!--SOC-SIDEBAR-->
+                <ul class="s-sidebar">
+                    <li>
+                        <a href="https://www.instagram.com/levkazaryan.personal/" target="_blank">
+                        <span class="img-box">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.3125C0 1.93077 1.93077 0 4.3125 0H15.6875C18.0692 0 20 1.93077 20 4.3125V15.6875C20 18.0692 18.0692 20 15.6875 20H4.3125C1.93077 20 0 18.0692 0 15.6875V4.3125ZM14.2857 10C14.2857 12.3669 12.3669 14.2857 10 14.2857C7.63307 14.2857 5.71429 12.3669 5.71429 10C5.71429 7.63307 7.63307 5.71429 10 5.71429C12.3669 5.71429 14.2857 7.63307 14.2857 10ZM15.7143 5.71429C16.5033 5.71429 17.1429 5.07469 17.1429 4.28571C17.1429 3.49674 16.5033 2.85714 15.7143 2.85714C14.9253 2.85714 14.2857 3.49674 14.2857 4.28571C14.2857 5.07469 14.9253 5.71429 15.7143 5.71429Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/levkazaryan.personal" target="_blank">
+                        <span class="img-box">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.8516 12.9375L17.4906 8.77523H13.4965V6.07417C13.4965 4.93567 14.0542 3.8252 15.8432 3.8252H17.6588V0.281764C17.6588 0.281764 16.0114 0.000732422 14.4359 0.000732422C11.1469 0.000732422 8.9971 1.99454 8.9971 5.60339V8.77595H5.34082V12.9382H8.9971V23.0007H13.4965V12.9382L16.8516 12.9375Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://wa.me/972535319943?text=%D7%94%D7%99%D7%99%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8" target="_blank">
+                        <span class="img-box">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C4.50745 0 0 4.50745 0 10C0 11.8127 0.488739 13.5774 1.41556 15.1213L0 20L4.87869 18.5844C6.42258 19.5113 8.18726 20 10 20C15.4926 20 20 15.4926 20 10C20 4.50745 15.4926 0 10 0ZM16.2521 14.2253L15.7869 14.6906C15.1286 15.3488 13.6148 15.2966 12.6421 15.1088C9.40765 14.4841 5.63675 10.829 4.90952 7.66373C4.54941 6.09573 4.74823 4.73251 5.26825 4.21234L5.73349 3.7471C5.9903 3.49045 6.40747 3.49075 6.66397 3.7471L8.52524 5.60852C8.64944 5.73273 8.7175 5.89737 8.7175 6.07361C8.7175 6.24985 8.64944 6.41464 8.52524 6.53839L8.06015 7.00409C7.54745 7.51801 7.54745 8.35281 8.06015 8.86551L11.1337 11.8987C11.6479 12.4129 12.4802 12.4135 12.9951 11.8987L13.4604 11.4336C13.7006 11.192 14.1492 11.1913 14.3913 11.4336L16.2521 13.2944C16.5048 13.546 16.5144 13.9629 16.2521 14.2253Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@levkazaryan" target="_blank">
+                        <span class="img-box">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5769 5.76758C20.2643 5.76758 19.0532 5.33273 18.0807 4.59916C16.9653 3.75822 16.1638 2.52467 15.8808 1.10289C15.8108 0.751601 15.773 0.389082 15.7694 0.0175781H12.0198V10.2634L12.0153 15.8754C12.0153 17.3758 11.0383 18.648 9.68386 19.0954C9.2908 19.2253 8.86629 19.2868 8.42425 19.2626C7.86004 19.2316 7.3313 19.0613 6.87175 18.7864C5.8938 18.2015 5.23076 17.1404 5.21279 15.9267C5.18449 14.0296 6.71812 12.4829 8.61382 12.4829C8.98802 12.4829 9.3474 12.544 9.68386 12.655V9.85457V8.84787C9.32898 8.79531 8.96781 8.76791 8.60259 8.76791C6.52765 8.76791 4.58703 9.63041 3.19984 11.1843C2.15136 12.3585 1.52246 13.8567 1.42543 15.4276C1.2983 17.4913 2.05343 19.453 3.51789 20.9004C3.73306 21.1129 3.95902 21.3101 4.19531 21.492C5.45087 22.4583 6.98586 22.9821 8.60259 22.9821C8.96781 22.9821 9.32898 22.9551 9.68386 22.9026C11.1941 22.6789 12.5876 21.9875 13.6873 20.9004C15.0386 19.5649 15.7852 17.7918 15.7932 15.9046L15.7739 7.52402C16.4186 8.02131 17.1234 8.43279 17.8799 8.75219C19.0564 9.24857 20.3038 9.50014 21.5877 9.49969V6.77697V5.76668C21.5886 5.76758 21.5778 5.76758 21.5769 5.76758Z" fill="#3a5ee5"/>
+                            </svg>
+                        </span>
+                        </a>
+                    </li>
+
+                    <li><a href="https://www.linkedin.com/in/levkazaryan" target="_blank">
+            <span class="img-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9951 19.9999V19.999H20.0001V12.664C20.0001 9.07569 19.2276 6.31152 15.0326 6.31152C13.0159 6.31152 11.6626 7.41819 11.1101 8.46736H11.0517V6.64652H7.07422V19.999H11.2159V13.3874C11.2159 11.6465 11.5459 9.96319 13.7017 9.96319C15.8259 9.96319 15.8576 11.9499 15.8576 13.499V19.9999H19.9951Z" fill="#2E3262"/>
+                <path d="M0.329834 6.64746H4.4765V20H0.329834V6.64746Z" fill="#2E3262"/>
+                <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" fill="#2E3262"/>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="20" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </span>
+                    </a></li>
+
+                    <li><a href="https://youtube.com/channel/UCfwaYC_TZLcVfpTMWSzl1vw" target="_blank">
+            <span class="img-box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8257 6.11039C21.5772 5.18664 20.8489 4.45846 19.9253 4.20972C18.238 3.74805 11.4885 3.74805 11.4885 3.74805C11.4885 3.74805 4.7393 3.74805 3.05197 4.19222C2.14612 4.4407 1.40004 5.18678 1.15156 6.11039C0.70752 7.7976 0.70752 11.2966 0.70752 11.2966C0.70752 11.2966 0.70752 14.8133 1.15156 16.4829C1.4003 17.4065 2.12835 18.1347 3.0521 18.3834C4.75707 18.8452 11.4888 18.8452 11.4888 18.8452C11.4888 18.8452 18.238 18.8452 19.9253 18.4011C20.8491 18.1524 21.5772 17.4243 21.826 16.5006C22.2699 14.8133 22.2699 11.3144 22.2699 11.3144C22.2699 11.3144 22.2877 7.7976 21.8257 6.11039ZM9.33963 14.5292V8.0641L14.9521 11.2966L9.33963 14.5292Z" fill="#2E3262"/>
+                </svg>
+            </span>
+                    </a></li>
+                </ul>
+
+                <img class="lk-img hide-d" src="./img/logo.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN-BLOCK-->
+    <div class="main-block">
+        <div class="container">
+            <div class="flex">
+                <div class="right-col">
+                    <h1 class="hide-d"><span class="dark-text">שיטת </span> "ארבעת הצבעים בתקשורת בין אישית"</h1>
+                    <div class="video-box">
+                        <picture>
+                            <source media="(max-width: 1260px)" srcset="./img/video-bg.jpg">
+                            <img src="./img/video-bg.jpg" alt="">
+                        </picture>
+                        <button class="play-btn modal-2-open open-modal" data-open="video-modal-3">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.25833 6.9641C8.25833 5.4245 9.925 4.46225 11.2583 5.23205L24.7583 13.0263C26.0917 13.7961 26.0917 15.7206 24.7583 16.4904L11.2583 24.2846C9.925 25.0544 8.25833 24.0922 8.25833 22.5526L8.25833 6.9641Z" fill="#3A5EE5"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="left-col">
+                    <h1><span class="dark-text">שיטת </span> "ארבעת הצבעים בתקשורת בין אישית"</h1>
+                    <span class="text">
+                        מה מיוחד בשיטה? השיטה מבוססת על מחקרים של הגדולים בתחום בכל העולם ובכל הזמנים. ביניהם היפקרוטס - רופא יווני, אבי הרפואה המערבית, ומייסד שבועת הרופאים. וקרל גוסטב יונג - אחד מאבות הפסיכולוגיה ומדעי ההתנהגות.
+                    </span>
+                    <span class="text">
+                        מטרת השיטה לעזור לך לשפר את חייך, שיטה שתפתח את היכולת שלך לתקשר בצורה טובה יותר. תקשורת טובה היא המפתח לזוגיות מוצלחת, לקריירה מצליחה, לעסקים טובים ולשיפור חיי היום יום.
+                    </span>
+                    <span class="text">
+                        אני מבטיח לך שאם להתמיד בשיטה - אפשר להפוך למומחים בתקשורת בין אישית, כל מה שנשאר זה רק לבחור מה הדרך שהכי מתאימה לך.
+                    </span>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+
+<!--PACKET-BLOCK-->
+<div class="packet-block">
+    <div class="container">
+        <div class="slider-wrapper">
+            <!--PACKET-SLIDER-->
+            <div class="packet-slider">
+                <!--SLIDE-->
+                <div class="slide">
+                    <span class="title">מומחים</span>
+                    <span class="sub-title">ספר + קורס + שיחה אישית</span>
+                    <span class="price">637<span class="currency">₪</span></span>
+                    <ul class="list">
+                        <li>
+                            ספר ארבעת הצבעים
+                            <br>בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            מבחן אישיות בשיטת הצבעים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            תרגילים פרקטיים שיהפכו את התאוריה למיומנות
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            חוברת תרגול
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            גישה לקבוצת פייסבוק סגורה
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            קורס ארבעת הצבעים בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            סימניה לספר בעיצוב מיוחד
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            קבוצת וואטסאפ סגורה לרציניים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            שיחה אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                    </ul>
+
+                    <a href="https://grn.ai/8EnrXnh1E105" target="_blank" class="blue-btn">אני רוצה!</a>
+                </div>
+
+                <!--SLIDE-->
+                <div class="slide blue">
+                    <span class="title">מתקדמים</span>
+                    <span class="sub-title">ספר + קורס + בונוס</span>
+                    <div class="price-wrapper">
+                        <span class="old-price">437<span class="currency">₪</span></span>
+                        <span class="price">299<span class="currency">₪</span></span>
+                    </div>
+
+                    <ul class="list">
+                        <li>
+                            ספר ארבעת הצבעים
+                            <br>בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            מבחן אישיות בשיטת הצבעים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            תרגילים פרקטיים שיהפכו את התאוריה למיומנות
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            חוברת תרגול
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            גישה לקבוצת פייסבוק סגורה
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            קורס ארבעת הצבעים בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            סימניה לספר בעיצוב מיוחד
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            קבוצת וואטסאפ סגורה לרציניים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            שיחה אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                    </ul>
+
+                    <a href="https://grn.ai/9hRCLNbCMigl" target="_blank" class="blue-btn -red-color">אני רוצה!</a>
+                </div>
+
+                <!--SLIDE-->
+                <div class="slide">
+                    <span class="title">מתחילים בקורס</span>
+                    <span class="sub-title">קורס ארבעת הצבעים בתקשורת בין אישית</span>
+                    <span class="price">299<span class="currency">₪</span></span>
+                    <ul class="list">
+                        <li class="excluded">
+                            ספר ארבעת הצבעים
+                            <br>בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                        <li>
+                            מבחן אישיות בשיטת הצבעים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            תרגילים פרקטיים שיהפכו את התאוריה למיומנות
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            חוברת תרגול
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            גישה לקבוצת פייסבוק סגורה
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            קורס ארבעת הצבעים בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            סימניה לספר בעיצוב מיוחד
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            קבוצת וואטסאפ סגורה לרציניים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            שיחה אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                    </ul>
+
+                    <a href="https://grn.ai/DmZMe1zce7Gu" target="_blank" class="blue-btn">אני רוצה!</a>
+                </div>
+
+                <!--SLIDE-->
+                <div class="slide">
+                    <span class="title">מתחילים בספר</span>
+                    <span class="sub-title">ספר ארבעת הצבעים בתקשורת בין אישית</span>
+                    <span class="price">89<span class="currency">₪</span></span>
+                    <ul class="list">
+                        <li>
+                            ספר ארבעת הצבעים
+                            <br>בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            מבחן אישיות בשיטת הצבעים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            תרגילים פרקטיים שיהפכו את התאוריה למיומנות
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            חוברת תרגול
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li>
+                            גישה לקבוצת פייסבוק סגורה
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 3L5.125 10.5L2 7.09091" stroke="#3A5EE5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            קורס ארבעת הצבעים בתקשורת בין אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            סימניה לספר בעיצוב מיוחד
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            קבוצת וואטסאפ סגורה לרציניים
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                        <li class="excluded">
+                            שיחה אישית
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6621 3.96966L8.6321 6.99993L11.6621 10.0301C12.1128 10.4809 12.1128 11.2113 11.6621 11.6621C11.4369 11.8873 11.1416 12 10.8466 12C10.551 12 10.2557 11.8875 10.0307 11.6621L7.00006 8.63165L3.96966 11.6621C3.7445 11.8873 3.44924 12 3.15388 12C2.85862 12 2.56355 11.8875 2.33819 11.6621C1.8875 11.2114 1.8875 10.4811 2.33819 10.03L5.36807 6.9999L2.33802 3.96966C1.88733 3.51896 1.88733 2.78845 2.33802 2.33776C2.78863 1.88741 3.51871 1.88741 3.96949 2.33776L7.00003 5.36804L10.0303 2.33776C10.4812 1.88741 11.2114 1.88741 11.6619 2.33776C12.1128 2.78845 12.1128 3.51896 11.6621 3.96966Z" fill="#B7B8C7"/>
+                            </svg>
+                        </li>
+                    </ul>
+
+                    <a href="https://grn.ai/nDc97CuKzRjg" target="_blank" class="blue-btn">אני רוצה!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+    <div class="container">
+        <div class="flex">
+            <a href="./index.html" class="logo dark">
+                <svg width="89" height="52" viewBox="0 0 89 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M69.4444 3H81.4556L62.2889 21.5408L74.8111 38.2041M3 38.2589V3H13.2222V49H39.2889V40.5939H25.7444M39.5444 30.5052V3H49.2007V32.4021L53.7747 28.134L70.5461 49H84.5222" stroke="white" stroke-width="5.35602"/>
+                    <linearGradient id="paint99_linear" x1="3" y1="3" x2="63.5462" y2="50.6147" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#1333B3"/>
+                        <stop offset="1" stop-color="#3077F3"/>
+                    </linearGradient>
+                </svg>
+            </a>
+
+            <!--NAV-->
+            <ul class="nav">
+                <li><a href="./index.html#contact">בואו נדבר</a></li>
+                <li><a href="./index.html#landing">שיטת ארבעת הצבעים</a></li>
+                <li><a href="./index.html#reviews">מה אומרים עלי</a></li>
+                <!--                <li><a href="#fifth-screen">תידדה הרזע</a></li>-->
+                <!--                <li><a href="#fourth-screen">ישיא ןמוי</a></li>-->
+                <!--                <li><a href="#third-screen">םיסרוק</a></li>-->
+                <!--                <li><a class="btn-link" target="_blank" href="https://headstart.co.il/project/60611">הספר</a></li>-->
+                <li><a href="./index.html#purpose">המטרה</a></li>
+                <li><a href="./book.html">מה הספר כולל</a></li>
+                <li><a href="./index.html#about">נעים להכיר</a></li>
+            </ul>
+
+
+            <!--SOC-SIDEBAR-->
+            <ul class="s-sidebar">
+                <li><a href="https://www.instagram.com/levkazaryan.personal/" target="_blank">
+            <span class="img-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.3125C0 1.93077 1.93077 0 4.3125 0H15.6875C18.0692 0 20 1.93077 20 4.3125V15.6875C20 18.0692 18.0692 20 15.6875 20H4.3125C1.93077 20 0 18.0692 0 15.6875V4.3125ZM14.2857 10C14.2857 12.3669 12.3669 14.2857 10 14.2857C7.63307 14.2857 5.71429 12.3669 5.71429 10C5.71429 7.63307 7.63307 5.71429 10 5.71429C12.3669 5.71429 14.2857 7.63307 14.2857 10ZM15.7143 5.71429C16.5033 5.71429 17.1429 5.07469 17.1429 4.28571C17.1429 3.49674 16.5033 2.85714 15.7143 2.85714C14.9253 2.85714 14.2857 3.49674 14.2857 4.28571C14.2857 5.07469 14.9253 5.71429 15.7143 5.71429Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+                </a></li>
+
+                <li><a href="https://www.facebook.com/levkazaryan.personal" target="_blank">
+            <span class="img-box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.8516 12.9375L17.4906 8.77523H13.4965V6.07417C13.4965 4.93567 14.0542 3.8252 15.8432 3.8252H17.6588V0.281764C17.6588 0.281764 16.0114 0.000732422 14.4359 0.000732422C11.1469 0.000732422 8.9971 1.99454 8.9971 5.60339V8.77595H5.34082V12.9382H8.9971V23.0007H13.4965V12.9382L16.8516 12.9375Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+                </a></li>
+
+                <li><a href="https://wa.me/972535319943?text=%D7%94%D7%99%D7%99%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%90%D7%9C%D7%99%D7%9A%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8" target="_blank">
+        <span class="img-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 0C4.50745 0 0 4.50745 0 10C0 11.8127 0.488739 13.5774 1.41556 15.1213L0 20L4.87869 18.5844C6.42258 19.5113 8.18726 20 10 20C15.4926 20 20 15.4926 20 10C20 4.50745 15.4926 0 10 0ZM16.2521 14.2253L15.7869 14.6906C15.1286 15.3488 13.6148 15.2966 12.6421 15.1088C9.40765 14.4841 5.63675 10.829 4.90952 7.66373C4.54941 6.09573 4.74823 4.73251 5.26825 4.21234L5.73349 3.7471C5.9903 3.49045 6.40747 3.49075 6.66397 3.7471L8.52524 5.60852C8.64944 5.73273 8.7175 5.89737 8.7175 6.07361C8.7175 6.24985 8.64944 6.41464 8.52524 6.53839L8.06015 7.00409C7.54745 7.51801 7.54745 8.35281 8.06015 8.86551L11.1337 11.8987C11.6479 12.4129 12.4802 12.4135 12.9951 11.8987L13.4604 11.4336C13.7006 11.192 14.1492 11.1913 14.3913 11.4336L16.2521 13.2944C16.5048 13.546 16.5144 13.9629 16.2521 14.2253Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+                </a></li>
+
+                <li><a href="https://www.tiktok.com/@levkazaryan" target="_blank">
+            <span class="img-box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.5769 5.76758C20.2643 5.76758 19.0532 5.33273 18.0807 4.59916C16.9653 3.75822 16.1638 2.52467 15.8808 1.10289C15.8108 0.751601 15.773 0.389082 15.7694 0.0175781H12.0198V10.2634L12.0153 15.8754C12.0153 17.3758 11.0383 18.648 9.68386 19.0954C9.2908 19.2253 8.86629 19.2868 8.42425 19.2626C7.86004 19.2316 7.3313 19.0613 6.87175 18.7864C5.8938 18.2015 5.23076 17.1404 5.21279 15.9267C5.18449 14.0296 6.71812 12.4829 8.61382 12.4829C8.98802 12.4829 9.3474 12.544 9.68386 12.655V9.85457V8.84787C9.32898 8.79531 8.96781 8.76791 8.60259 8.76791C6.52765 8.76791 4.58703 9.63041 3.19984 11.1843C2.15136 12.3585 1.52246 13.8567 1.42543 15.4276C1.2983 17.4913 2.05343 19.453 3.51789 20.9004C3.73306 21.1129 3.95902 21.3101 4.19531 21.492C5.45087 22.4583 6.98586 22.9821 8.60259 22.9821C8.96781 22.9821 9.32898 22.9551 9.68386 22.9026C11.1941 22.6789 12.5876 21.9875 13.6873 20.9004C15.0386 19.5649 15.7852 17.7918 15.7932 15.9046L15.7739 7.52402C16.4186 8.02131 17.1234 8.43279 17.8799 8.75219C19.0564 9.24857 20.3038 9.50014 21.5877 9.49969V6.77697V5.76668C21.5886 5.76758 21.5778 5.76758 21.5769 5.76758Z" fill="#3a5ee5"/>
+                </svg>
+            </span>
+                </a></li>
+
+                <li><a href="https://www.linkedin.com/in/levkazaryan" target="_blank">
+            <span class="img-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9951 19.9999V19.999H20.0001V12.664C20.0001 9.07569 19.2276 6.31152 15.0326 6.31152C13.0159 6.31152 11.6626 7.41819 11.1101 8.46736H11.0517V6.64652H7.07422V19.999H11.2159V13.3874C11.2159 11.6465 11.5459 9.96319 13.7017 9.96319C15.8259 9.96319 15.8576 11.9499 15.8576 13.499V19.9999H19.9951Z" fill="#2E3262"/>
+                <path d="M0.329834 6.64746H4.4765V20H0.329834V6.64746Z" fill="#2E3262"/>
+                <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" fill="#2E3262"/>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="20" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </span>
+                </a></li>
+
+                <li><a href="https://youtube.com/channel/UCfwaYC_TZLcVfpTMWSzl1vw" target="_blank">
+            <span class="img-box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.8257 6.11039C21.5772 5.18664 20.8489 4.45846 19.9253 4.20972C18.238 3.74805 11.4885 3.74805 11.4885 3.74805C11.4885 3.74805 4.7393 3.74805 3.05197 4.19222C2.14612 4.4407 1.40004 5.18678 1.15156 6.11039C0.70752 7.7976 0.70752 11.2966 0.70752 11.2966C0.70752 11.2966 0.70752 14.8133 1.15156 16.4829C1.4003 17.4065 2.12835 18.1347 3.0521 18.3834C4.75707 18.8452 11.4888 18.8452 11.4888 18.8452C11.4888 18.8452 18.238 18.8452 19.9253 18.4011C20.8491 18.1524 21.5772 17.4243 21.826 16.5006C22.2699 14.8133 22.2699 11.3144 22.2699 11.3144C22.2699 11.3144 22.2877 7.7976 21.8257 6.11039ZM9.33963 14.5292V8.0641L14.9521 11.2966L9.33963 14.5292Z" fill="#2E3262"/>
+                </svg>
+            </span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video-modal video-modal-1">
+    <div class="video-wrapper">
+        <button class="close-btn" type="button">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="white"/>
+                <path d="M25.5945 16.3636L21.9585 19.9999L25.5945 23.6361C26.1353 24.1771 26.1353 25.0535 25.5945 25.5946C25.3243 25.8648 24.97 26 24.6159 26C24.2612 26 23.9068 25.865 23.6368 25.5946L20.0001 21.958L16.3636 25.5945C16.0934 25.8647 15.7391 26 15.3847 26C15.0303 26 14.6763 25.865 14.4058 25.5945C13.865 25.0537 13.865 24.1773 14.4058 23.636L18.0417 19.9999L14.4056 16.3636C13.8648 15.8228 13.8648 14.9461 14.4056 14.4053C14.9464 13.8649 15.8225 13.8649 16.3634 14.4053L20 18.0416L23.6364 14.4053C24.1775 13.8649 25.0537 13.8649 25.5943 14.4053C26.1353 14.9461 26.1353 15.8228 25.5945 16.3636Z" fill="#3A5EE5"/>
+            </svg>
+        </button>
+        <iframe id="video-frame" width="100%" height="100%" src="https://www.youtube.com/embed/bMzi0qKeiCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="video-modal video-modal-2">
+    <div class="video-wrapper">
+        <button class="close-btn" type="button">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="white"/>
+                <path d="M25.5945 16.3636L21.9585 19.9999L25.5945 23.6361C26.1353 24.1771 26.1353 25.0535 25.5945 25.5946C25.3243 25.8648 24.97 26 24.6159 26C24.2612 26 23.9068 25.865 23.6368 25.5946L20.0001 21.958L16.3636 25.5945C16.0934 25.8647 15.7391 26 15.3847 26C15.0303 26 14.6763 25.865 14.4058 25.5945C13.865 25.0537 13.865 24.1773 14.4058 23.636L18.0417 19.9999L14.4056 16.3636C13.8648 15.8228 13.8648 14.9461 14.4056 14.4053C14.9464 13.8649 15.8225 13.8649 16.3634 14.4053L20 18.0416L23.6364 14.4053C24.1775 13.8649 25.0537 13.8649 25.5943 14.4053C26.1353 14.9461 26.1353 15.8228 25.5945 16.3636Z" fill="#3A5EE5"/>
+            </svg>
+        </button>
+        <iframe id="video-frame-2" width="100%" height="100%" src="https://www.youtube.com/embed/MeGsGwnHwUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="video-modal video-modal-3">
+    <div class="video-wrapper">
+        <button class="close-btn" type="button">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="white"/>
+                <path d="M25.5945 16.3636L21.9585 19.9999L25.5945 23.6361C26.1353 24.1771 26.1353 25.0535 25.5945 25.5946C25.3243 25.8648 24.97 26 24.6159 26C24.2612 26 23.9068 25.865 23.6368 25.5946L20.0001 21.958L16.3636 25.5945C16.0934 25.8647 15.7391 26 15.3847 26C15.0303 26 14.6763 25.865 14.4058 25.5945C13.865 25.0537 13.865 24.1773 14.4058 23.636L18.0417 19.9999L14.4056 16.3636C13.8648 15.8228 13.8648 14.9461 14.4056 14.4053C14.9464 13.8649 15.8225 13.8649 16.3634 14.4053L20 18.0416L23.6364 14.4053C24.1775 13.8649 25.0537 13.8649 25.5943 14.4053C26.1353 14.9461 26.1353 15.8228 25.5945 16.3636Z" fill="#3A5EE5"/>
+            </svg>
+        </button>
+        <iframe id="video-frame-3" width="100%" height="100%" src="https://www.youtube.com/embed/xNILe5IhOrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/slick.1.8.1.js"></script>
+<script src="./js/main.js?v=14"></script>
+</body>
+</html>

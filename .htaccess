@@ -1,0 +1,6 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?levkazaryan\.com
+RewriteRule ^(.*)$ https://www.levkazaryan.com/$1 [R,L]
+Redirect 301 /personalitytest /index.html#test
+Redirect 301 /73guqe https://greeninvoice.shop/73guqe
